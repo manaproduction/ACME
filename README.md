@@ -7,7 +7,9 @@ express
 
 # Used resources
       # Background picture credit
-      Photo by <a href="https://burst.shopify.com/@shopifypartners?utm_campaign=photo_credit&amp;utm_content=High+Res+Blueprints+For+House+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Shopify Partners</a> from <a href="https://burst.shopify.com/construction?utm_campaign=photo_credit&amp;utm_content=High+Res+Blueprints+For+House+Picture+%E2%80%94+Free+Images&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>
+      Photo from Shopify found at https://burst.shopify.com/photos/blueprints-for-house?c=construction
+      
+      
       # Ejs-Boilerplate
       Turning html template (https://html5up.net/phantom) into a Nodejs Ejs template boilerplate.
 
