@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\ProgramData\\Chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'sass'
+1 verbose cli ]
+2 info using npm@1.4.9
+3 info using node@v14.18.0
+4 error Error: Invalid name: "Acme AB"
+4 error     at ensureValidName (C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\node_modules\normalize-package-data\lib\fixer.js:300:15)
+4 error     at Object.fixNameField (C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\node_modules\normalize-package-data\lib\fixer.js:204:5)
+4 error     at C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\node_modules\normalize-package-data\lib\normalize.js:30:38
+4 error     at Array.forEach (<anonymous>)
+4 error     at normalize (C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\node_modules\normalize-package-data\lib\normalize.js:29:15)
+4 error     at final (C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\read-json.js:342:33)
+4 error     at then (C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\read-json.js:126:33)
+4 error     at C:\ProgramData\Chocolatey\lib\npm\tools\node_modules\npm\node_modules\read-package-json\read-json.js:331:40
+4 error     at FSReqCallback.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:71:3)
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Windows_NT 10.0.19043
+7 error command "C:\\Program Files\\nodejs\\node.exe" "C:\\ProgramData\\Chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js" "install" "sass"
+8 error cwd D:\Data\sogeti\Ejs-Boilerplate
+9 error node -v v14.18.0
+10 error npm -v 1.4.9
+11 verbose exit [ 1, true ]
