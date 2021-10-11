@@ -214,4 +214,50 @@
 
 		});
 
+
 })(jQuery);
+
+
+// Google maps
+
+function initMap(){
+	// Map options
+	var options = {
+		zoom:12,
+		center:{lat:59.35996128248058,lng:17.97838584146384}
+	}
+
+	// New map
+	var map = new google.maps.Map(document.getElementById('map'), options);
+
+	// Listen for click on map
+	google.maps.event.addListener(map, 'click', function(event){
+		// Add marker
+		addMarker({coords:event.latLng});
+	});
+
+	// Add marker
+	var marker = new google.maps.Marker({
+		position:{lat:59.35996128248058,lng:17.97838584146384},
+		map:map,
+		icon:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+	});
+
+	var infoWindow = new google.maps.InfoWindow({
+		content:'<h1>ACME AB kontor</h1>'
+	});
+
+	marker.addListener('click', function(){
+		infoWindow.open(map, marker);
+	});
+
+}
+
+// Change the footer's background color when colorBlock is clicked
+
+ $(".colorBlock").click(function() {
+	 var $backgroundColor = $(this).css("background-color");
+	 $("#footer").css("background-color", $backgroundColor);
+ });
+
+//Generate data from excel
